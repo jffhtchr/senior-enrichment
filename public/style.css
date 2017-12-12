@@ -1,0 +1,264 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    color:white;
+}
+
+/* -------- ALL PAGES -------- */
+
+
+
+.nav {
+    /* border:2px solid black; */
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end;
+    flex-wrap:wrap;
+        /* flex:1; */
+}
+
+.nav a {
+    color:white;
+    text-decoration: none;
+}
+
+.nav li {
+    padding:10px 15px;
+    list-style: none;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+
+.nav li :hover {
+    color:orange;
+}
+
+#main-container{
+    /* border:2px solid purple; */
+    display: flex;
+    flex-direction: column;
+    min-height:100vh;
+    background-image: url('http://www.baltana.com/files/wallpapers-2/Space-Wallpaper-HD-05070.jpg') ;
+    background-size:cover;
+    background-position: center; 
+}
+
+.main-content {
+    /* border:2px solid red; */
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* -------- Home Page --------- */
+#home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height:100%; 
+    color:white; 
+    text-align: center;
+}
+
+#home-container h1 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 8vw;
+    letter-spacing: 1px;
+}
+
+/* ------- DISPLAY ALL THINGS -------- */
+
+.all-things{
+    /* border:2px solid green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100%;
+    overflow-y: scroll;
+}
+
+.all-things ul {
+    /* border:2px solid yellow; */
+    font-family: 'Permanent Marker', cursive; 
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.all-things li {
+    font-size:25px;
+}
+
+.all-things-box{
+    border:3px solid white;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding:10px;
+    width:200px;
+    height:200px;
+    /* background-color: rgba(239, 239, 243, 0.4); */
+    border-radius: 100%;
+}
+
+.all-things-box li {
+    text-decoration: none;
+    font-style: none;
+    letter-spacing: 1px;    
+}
+
+.all-things :hover{
+    color:orange;
+}
+
+.all-things-box :visited{
+    background:none;
+    border:1px solid black;
+    color:black;
+    font-family: helvetica;
+    text-decoration: none;
+    font-style: none;
+}
+
+.add-thing {
+    background-color: rgba(239, 239, 243, 0.4);
+    font-size: 25px;
+    width:30vw;
+    margin-top:10%;
+    margin-bottom:10%;
+    font-family: 'Permanent Marker', cursive; 
+    padding:10px;
+    border: none;
+    color:black;
+    border: 2px solid whitesmoke;
+}
+
+.add-thing a{
+    text-decoration: none;
+}
+
+.navStyle{
+    text-decoration: none;
+    color: black;
+}
+
+/* ---------- FORM BOX ----------- */
+
+label {
+    color:white;
+    font-family: 'Permanent Marker', cursive;
+    padding:15px;   
+    font-size:25px;
+}
+
+.form-box{
+    /* border:2px solid white; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+}
+
+.add-form{
+    /* border:2px solid purple; */
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+    justify-content: center;
+    align-items: center;
+
+}
+
+input{
+    height: 25px;
+    width: 100%;
+    color:black;
+}
+
+select{
+    width:100%;
+    height:25px;
+    color:black;
+}
+
+/* -------- DISPLAY ONE THING -------- */
+.one-thing{
+    /* border:2px solid yellow; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    width: 70vw;
+    height:100%;;
+    color:black;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 25px;
+    letter-spacing: 1px;
+    
+}
+
+.one-thing ul{
+    /* border:2px solid purple; */
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    align-items:center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+.campus-img-container{
+    /* border:2px solid orange; */
+    display: flex;
+    width: 150px;
+    height:150px;
+}
+
+.campus-img{
+    display: block;
+    width:100%;
+}
+
+.mapped-students{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+
+.student-button{
+    font-size:25px;
+    color:white;
+    background: none;
+    border: none;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.student-button:hover{
+    color:orange;
+}
+
+.edit-button{
+    font-size:15px;
+    color:white;
+    background: none;
+    border: 2px solid white;
+    margin:5px;
+    padding:5px;
+}
+
+.edit-button:hover{
+    color:orange;
+}

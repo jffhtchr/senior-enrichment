@@ -9,7 +9,7 @@ module.exports = {
     filename: './public/bundle.js'
   },
   context: __dirname,
-  devtool: 'source-map',
+  devtool: 'source-map', //lets me see line numbers in compiled code 
   resolve: {
     extensions: ['.js', '.jsx']
   },

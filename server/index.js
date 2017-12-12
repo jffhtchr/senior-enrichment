@@ -4,6 +4,7 @@ const express = require('express');
 const path = require('path');
 const volleyball = require('volleyball');
 const bodyParser = require('body-parser');
+const db = require("./db")
 
 const app = express();
 
@@ -15,7 +16,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 //static middleware
-app.use(express.static(path.join(__dirname, '../public')));
+app.use(express.static(path.join(__dirname, '../public'))); //WHY DOES THIS NOT SEND THE HTML FILE?
 
 app.use('/api', require('./api')); // include our routes!
 
